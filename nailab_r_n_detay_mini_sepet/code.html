@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+
+<html lang="tr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-primary-fixed-variant": "#474747", "on-secondary-container": "#785b43", "on-error-container": "#93000a", "error-container": "#ffdad6", "on-error": "#ffffff", "on-primary": "#ffffff", "error": "#ba1a1a", "primary-container": "#1b1b1b", "on-tertiary-fixed": "#2c1605", "surface-container-lowest": "#ffffff", "on-tertiary-container": "#a07d64", "on-tertiary-fixed-variant": "#5d402c", "surface-container-high": "#eee7e2", "on-primary-fixed": "#1b1b1b", "on-background": "#1e1b18", "tertiary-fixed": "#ffdcc5", "on-tertiary": "#ffffff", "tertiary-container": "#2c1605", "background": "#fff8f4", "surface": "#fff8f4", "primary": "#000000", "surface-container-low": "#faf2ed", "outline-variant": "#cfc4c5", "secondary-container": "#fdd5b8", "outline": "#7e7576", "surface-dim": "#e0d9d4", "surface-tint": "#5e5e5e", "surface-container": "#f4ece7", "secondary-fixed-dim": "#e6bfa2", "primary-fixed-dim": "#c6c6c6", "surface-bright": "#fff8f4", "inverse-surface": "#33302d", "primary-fixed": "#e2e2e2", "on-surface-variant": "#4c4546", "secondary": "#765841", "secondary-fixed": "#ffdcc3", "on-secondary-fixed": "#2b1705", "on-secondary": "#ffffff", "inverse-primary": "#c6c6c6", "surface-variant": "#e9e1dc", "on-primary-container": "#848484", "on-surface": "#1e1b18", "surface-container-highest": "#e9e1dc", "inverse-on-surface": "#f7efea", "tertiary-fixed-dim": "#e8bea3", "on-secondary-fixed-variant": "#5c412b", "tertiary": "#000000" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "margin-desktop": "3rem", "margin": "1rem", "gutter": "1rem", "space-lg": "1.5rem", "gutter-desktop": "1.5rem", "space-xs": "0.25rem", "space-md": "1rem", "space-sm": "0.5rem", "space-xl": "2.5rem" }, fontFamily: { "display-hero-mobile": ["Outfit"], "headline-lg": ["Outfit"], "label-md": ["Outfit"], "body-md": ["Outfit"], "headline-sm": ["Outfit"], "body-sm": ["Outfit"], "headline-md": ["Outfit"], "label-caps": ["Outfit"], "display-hero": ["Outfit"], "body-lg": ["Outfit"], "label-sm": ["Outfit"] }, fontSize: { "display-hero-mobile": ["36px", { lineHeight: "44px", letterSpacing: "-0.01em", fontWeight: "400" }], "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "500" }], "label-md": ["14px", { lineHeight: "20px", letterSpacing: "0.02em", fontWeight: "500" }], "body-md": ["15px", { lineHeight: "24px", letterSpacing: "0.01em", fontWeight: "400" }], "headline-sm": ["20px", { lineHeight: "28px", letterSpacing: "0em", fontWeight: "600" }], "body-sm": ["13px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "400" }], "headline-md": ["24px", { lineHeight: "32px", letterSpacing: "0em", fontWeight: "500" }], "label-caps": ["11px", { lineHeight: "16px", letterSpacing: "0.14em", fontWeight: "600" }], "display-hero": ["56px", { lineHeight: "64px", letterSpacing: "-0.02em", fontWeight: "400" }], "body-lg": ["18px", { lineHeight: "28px", letterSpacing: "0em", fontWeight: "300" }], "label-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "500" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#fff8f4;}body{overscroll-behavior:none;-webkit-font-smoothing:antialiased;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(96,67,46,0.04)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><img alt="NAILAB logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V0Ia-SrRMZ8fUk46OJjepSHjNxe9_MXhUeZmfi6neI0OV6O-_izr_PtEKf__X4r4UOB9YDlcHxiMw9anVBgpj0puMAB9gz4qHfzIJWxanjZp-IszVb7IGTjpzL8_KHF5dffQ1mG5-CEEnLD04fRdr0aUbIKYOuUHq6WvdToydj4vnO_tRyf0AlnjBsHJTOUPOxoUVk6HlBXkJNhkfaPgNf8ApZqzBHIfkkrttc8boYi__VBEX8mxWR-S3Hoasaw7xKKTpRybjhuOY"/><div class="flex flex-col"><span class="font-label-caps text-label-caps uppercase text-primary tracking-[0.18em] leading-none">NAILAB™</span><span class="font-label-sm text-label-sm text-secondary tracking-normal leading-none mt-1">Ana Sayfa</span></div></div><div class="flex items-center gap-space-xs"><button aria-label="Arama Yap" class="w-11 h-11 flex items-center justify-center rounded-full text-primary hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[22px]">search</span></button><a aria-label="Sepet" class="relative w-11 h-11 flex items-center justify-center rounded-full text-primary hover:bg-surface-container transition-colors" data-path="sepet" href="#"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute top-2 right-2 min-w-[16px] h-4 px-1 rounded-full bg-secondary text-on-secondary font-label-caps text-[10px] leading-4 text-center font-semibold">0</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-1"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full pb-20 relative">
+<!-- Breadcrumb & Badge -->
+<div class="px-margin pt-3 flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-caps text-label-caps">
+<a class="hover:text-primary transition-colors" href="#">MAĞAZA</a>
+<span class="text-outline-variant">/</span>
+<a class="hover:text-primary transition-colors" href="#">EĞİTİM EKİPMANLARI</a>
+<span class="text-outline-variant">/</span>
+<span class="text-secondary font-semibold">KİT</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container font-label-caps text-[10px] tracking-wider text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+      SKU: NLB-EDU-001
+    </span>
+</div>
+<!-- Hero / Gallery Showcase -->
+<div class="px-margin pt-3">
+<div class="relative w-full aspect-square bg-surface-container-lowest rounded-lg overflow-hidden flex items-center justify-center p-4">
+<!-- Main Featured Product Image -->
+<img alt="NAILAB Anatomik Eğitim Parmağı" class="w-full h-full object-contain transition-all duration-300 transform scale-100 hover:scale-105" id="main-product-img" src="https://lh3.googleusercontent.com/aida/AEtjO1WZ4-L525i8035W92t_x97J0W9c1y5uN8p3w8k0Z5_G9=s1000"/>
+<!-- Top Badges -->
+<div class="absolute top-3 left-3 flex flex-col gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-primary text-on-primary font-label-caps text-[10px] tracking-widest uppercase">
+          Eğitmen Özel
+        </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high/90 backdrop-blur-sm text-secondary font-label-caps text-[10px] tracking-wider uppercase flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">verified</span> Medikal Standart
+        </span>
+</div>
+<!-- Quick Zoom / Action Pill -->
+<button aria-label="Görseli Yakınlaştır" class="absolute top-3 right-3 w-9 h-9 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-primary hover:bg-surface transition-colors" id="btn-zoom-trigger">
+<span class="material-symbols-outlined text-[18px]">zoom_in</span>
+</button>
+<!-- Slide Indicator Pill -->
+<div class="absolute bottom-3 right-3 px-2 py-0.5 rounded-full bg-primary/75 backdrop-blur-sm text-on-primary font-label-caps text-[10px] tracking-widest" id="gallery-counter">
+        1 / 4
+      </div>
+</div>
+<!-- Thumbnails Track -->
+<div class="flex items-center gap-2.5 mt-3 overflow-x-auto pb-1" id="thumb-container">
+<button aria-label="Eğitim Parmağı Görseli" class="thumb-btn flex-shrink-0 w-16 h-16 rounded-md bg-surface-container-lowest p-1.5 transition-all outline-none bg-surface-container-high" onclick="switchImage('https://lh3.googleusercontent.com/aida/AEtjO1WZ4-L525i8035W92t_x97J0W9c1y5uN8p3w8k0Z5_G9=s1000', 1)">
+<img alt="NAILAB Anatomik Eğitim Parmağı" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WZ4-L525i8035W92t_x97J0W9c1y5uN8p3w8k0Z5_G9=s1000"/>
+</button>
+<button aria-label="4 Farklı Freze Uçları" class="thumb-btn flex-shrink-0 w-16 h-16 rounded-md bg-surface-container-lowest p-1.5 transition-all outline-none" onclick="switchImage('https://lh3.googleusercontent.com/aida/AEtjO1V_X7tqW7Wj8P7rP8Q8k0Z5_G9a1y5uN8p3w8k0Z5_G9=s1000', 2)">
+<img alt="4 Farklı Freze Uçları" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V_X7tqW7Wj8P7rP8Q8k0Z5_G9a1y5uN8p3w8k0Z5_G9=s1000"/>
+</button>
+<button aria-label="NAILAB Rozet ve Damga" class="thumb-btn flex-shrink-0 w-16 h-16 rounded-md bg-surface-container-lowest p-1.5 transition-all outline-none" onclick="switchImage('https://lh3.googleusercontent.com/aida/AEtjO1V0Ia-SrRMZ8fUk46OJjepSHjNxe9_MXhUeZmfi6neI0OV6O-_izr_PtEKf__X4r4UOB9YDlcHxiMw9anVBgpj0puMAB9gz4qHfzIJWxanjZp-IszVb7IGTjpzL8_KHF5dffQ1mG5-CEEnLD04fRdr0aUbIKYOuUHq6WvdToydj4vnO_tRyf0AlnjBsHJTOUPOxoUVk6HlBXkJNhkfaPgNf8ApZqzBHIfkkrttc8boYi__VBEX8mxWR-S3Hoasaw7xKKTpRybjhuOY', 3)">
+<img alt="NAILAB Mühür" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V0Ia-SrRMZ8fUk46OJjepSHjNxe9_MXhUeZmfi6neI0OV6O-_izr_PtEKf__X4r4UOB9YDlcHxiMw9anVBgpj0puMAB9gz4qHfzIJWxanjZp-IszVb7IGTjpzL8_KHF5dffQ1mG5-CEEnLD04fRdr0aUbIKYOuUHq6WvdToydj4vnO_tRyf0AlnjBsHJTOUPOxoUVk6HlBXkJNhkfaPgNf8ApZqzBHIfkkrttc8boYi__VBEX8mxWR-S3Hoasaw7xKKTpRybjhuOY"/>
+</button>
+<button aria-label="Kutu ve Stand" class="thumb-btn flex-shrink-0 w-16 h-16 rounded-md bg-surface-container-lowest p-1.5 transition-all outline-none flex items-center justify-center text-secondary" onclick="switchImage('placeholder', 4)">
+<img class="w-full h-full object-contain rounded" data-alt="Minimalist clinical box packaging of the NAILAB professional nail training kit placed beside a soft cream pedestal in a bright studio with soft diffused lighting, rose gold foil stamping, and premium matte finish." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRtHMHicA42tLOlF6a1N8ePluJhqoPLNQyV6u2hq2JzEV3qcj155wNlwWUoJbrBw3f-eHIPDsyIL_2_YcuqThnC9QFQBWCkcpUZAlrSCOYd5QmP7acqDq9hsRf_nMBcUfvXTQKKU1iGssrZI16kcOBBufZCAlKzA-d4JQ6t2NMYtIXhNvC0xhGtoloWDEmD9O3UX10UnnpSSQPdsMGFS8ahn5RggXGRMhm5zjdkLJLeNHeCW0Rpgv2kQ"/>
+</button>
+</div>
+</div>
+<!-- Product Primary Header & Pricing -->
+<div class="px-margin mt-5 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.16em]">
+        KLİNİK &amp; AKADEMİK STANDART
+      </span>
+<div class="flex items-center gap-1 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-semibold text-primary">5.0</span>
+<span class="text-on-surface-variant font-normal">(38 Eğitmen Yorumu)</span>
+</div>
+</div>
+<h1 class="font-headline-md text-headline-md text-primary font-semibold tracking-tight">
+      NAILAB Profesyonel Eğitim Kiti
+    </h1>
+<div class="flex items-baseline gap-3 mt-1">
+<span class="font-headline-lg text-headline-lg text-primary font-semibold tracking-tight">
+        ₺3.450,00
+      </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">
+        (KDV Dahil)
+      </span>
+<span class="ml-auto inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-caps text-[11px] font-medium">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+        Stokta Var (Son 14 Adet)
+      </span>
+</div>
+<!-- Short Description Verbatim -->
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 leading-relaxed">
+      Temel manikür kurslarında eksik kalan profesyonel eğitim kiti. Özellikle tırnak eğitmenleri için geliştirilmiştir. Eğitim sırasında öğrencilerin farklı tırnak formları ve freze uygulamaları üzerinde pratik yapabilmesini sağlayan, uygulamaya yönelik profesyonel bir eğitim kitidir.
+    </p>
+</div>
+<!-- Interactive Nail Form Showcase Selector -->
+<div class="px-margin mt-6">
+<div class="p-4 rounded-lg bg-surface-container-lowest shadow-sm flex flex-col gap-3">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-caps text-[10px] uppercase text-secondary tracking-widest block font-semibold">TIRNAK FORMU İNCELEME</span>
+<h2 class="font-headline-sm text-headline-sm text-primary font-medium mt-0.5">
+            Kit İle Birlikte Gelen 4 Form (Tümü Dahildir):
+          </h2>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container text-on-secondary-container font-label-caps text-[10px]">
+          4/4 DAHİL
+        </span>
+</div>
+<!-- Informative Note -->
+<div class="flex items-center gap-2 p-2.5 rounded bg-surface-container-low text-secondary">
+<span class="material-symbols-outlined text-[18px] flex-shrink-0">info</span>
+<p class="font-label-sm text-label-sm leading-snug">
+          Bu seçim bilgi amaçlıdır; kiti satın aldığınızda 4 formun tamamı kutu içinde eksiksiz yer alır.
+        </p>
+</div>
+<!-- 4 Form Selector Tabs Grid -->
+<div class="grid grid-cols-2 gap-2 mt-1">
+<!-- 1. Kare -->
+<button class="form-card text-left p-3 rounded bg-surface text-primary transition-all flex flex-col justify-between" id="form-card-1" onclick="selectForm(1, 'Kare', 'Klasik düz küt form, şablon yerleşimi ve paralel törpüleme eğitimi için ideal.', '90° Keskin Yan Duvarlar')" type="button">
+<div class="flex items-center justify-between mb-2">
+<svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M6 19V5H18V19"></path>
+<path d="M4 19H20" stroke-linecap="round"></path>
+</svg>
+<span class="font-label-caps text-[10px] text-secondary tracking-wider font-semibold">FORM 01</span>
+</div>
+<div>
+<div class="font-label-md text-label-md font-semibold text-primary">Kare</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Klasik Kesim</div>
+</div>
+</button>
+<!-- 2. Uzun kemerli kare -->
+<button class="form-card text-left p-3 rounded bg-surface text-on-surface-variant hover:text-primary transition-all flex flex-col justify-between" id="form-card-2" onclick="selectForm(2, 'Uzun Kemerli Kare', 'Apeks ve derin C-eğrisi inşasında anatomik simülasyon sunar.', 'Derin C-Kavis Eğrisi')" type="button">
+<div class="flex items-center justify-between mb-2">
+<svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M6 20V8C6 5 8 4 12 4C16 4 18 5 18 8V20"></path>
+<path d="M4 20H20" stroke-linecap="round"></path>
+</svg>
+<span class="font-label-caps text-[10px] text-secondary tracking-wider font-semibold">FORM 02</span>
+</div>
+<div>
+<div class="font-label-md text-label-md font-semibold text-primary">Uzun Kemerli Kare</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">C-Kavisli Yapı</div>
+</div>
+</button>
+<!-- 3. Yuvarlatılmış köşeli dikdörtgen -->
+<button class="form-card text-left p-3 rounded bg-surface text-on-surface-variant hover:text-primary transition-all flex flex-col justify-between" id="form-card-3" onclick="selectForm(3, 'Yuvarlatılmış Köşeli Dikdörtgen', 'Salon uygulamalarında en sık talep edilen yumuşak squoval formu.', 'Squoval Estetik Kesim')" type="button">
+<div class="flex items-center justify-between mb-2">
+<svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+<rect height="15" rx="3" width="12" x="6" y="4"></rect>
+<path d="M4 20H20" stroke-linecap="round"></path>
+</svg>
+<span class="font-label-caps text-[10px] text-secondary tracking-wider font-semibold">FORM 03</span>
+</div>
+<div>
+<div class="font-label-md text-label-md font-semibold text-primary truncate">Köşeli Dikdörtgen</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Squoval Form</div>
+</div>
+</button>
+<!-- 4. Badem -->
+<button class="form-card text-left p-3 rounded bg-surface text-on-surface-variant hover:text-primary transition-all flex flex-col justify-between" id="form-card-4" onclick="selectForm(4, 'Badem', 'Zarif ince tırnak uçları ve hassas simetrik kütikül freze alıştırmaları için.', 'Almond Slim Kontur')" type="button">
+<div class="flex items-center justify-between mb-2">
+<svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M6 19C6 11 12 4 12 4C12 4 18 11 18 19"></path>
+<path d="M4 19H20" stroke-linecap="round"></path>
+</svg>
+<span class="font-label-caps text-[10px] text-secondary tracking-wider font-semibold">FORM 04</span>
+</div>
+<div>
+<div class="font-label-md text-label-md font-semibold text-primary">Badem</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Almond Slim</div>
+</div>
+</button>
+</div>
+<!-- Dynamic Form Detail Preview Bar -->
+<div class="p-3 rounded bg-surface-container flex items-center justify-between" id="form-detail-box">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">architecture</span>
+<div>
+<span class="font-label-md text-label-md font-semibold text-primary block leading-tight" id="form-active-title">1. Kare (Klasik Kesim)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant" id="form-active-desc">90° Keskin Yan Duvarlar - Şablon &amp; törpü hizalama egzersizi</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface text-secondary font-label-caps text-[10px] whitespace-nowrap font-medium">Kutuda Dahil</span>
+</div>
+</div>
+</div>
+<!-- Inline Purchasing Action Row -->
+<div class="px-margin mt-6 flex flex-col gap-3">
+<div class="flex items-center gap-3">
+<!-- Quantity Counter Component -->
+<div class="flex items-center bg-surface-container rounded-full px-2 py-1 h-12">
+<button aria-label="Adeti Azalt" class="w-9 h-9 rounded-full bg-surface-container-lowest text-primary flex items-center justify-center hover:bg-surface transition-colors" onclick="adjustQty(-1)">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<span class="w-10 text-center font-headline-sm text-headline-sm font-semibold text-primary" id="qty-display">1</span>
+<button aria-label="Adeti Artır" class="w-9 h-9 rounded-full bg-surface-container-lowest text-primary flex items-center justify-center hover:bg-surface transition-colors" onclick="adjustQty(1)">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+<!-- Add to Cart CTA -->
+<button class="flex-1 h-12 rounded-full bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider flex items-center justify-center gap-2 hover:bg-primary-container transition-all active:scale-[0.99] shadow-sm" onclick="openMiniCart()">
+<span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+<span>Sepete Ekle</span>
+</button>
+</div>
+<!-- Buy Now Secondary Pill -->
+<button class="w-full h-12 rounded-full bg-surface-container text-primary font-label-md text-label-md uppercase tracking-wider flex items-center justify-center gap-2 hover:bg-surface-variant transition-colors" onclick="quickBuy()">
+<span>Hemen Satın Al</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<!-- Trust Badges Summary -->
+<div class="px-margin mt-6 grid grid-cols-3 gap-2">
+<div class="p-3 rounded-lg bg-surface-container-lowest text-center flex flex-col items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-[22px]">local_shipping</span>
+<span class="font-label-caps text-[10px] font-semibold text-primary uppercase mt-1">ÜCRETSİZ KARGO</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant mt-0.5">₺1.000 Üzeri</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-lowest text-center flex flex-col items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-[22px]">published_with_changes</span>
+<span class="font-label-caps text-[10px] font-semibold text-primary uppercase mt-1">14 GÜN İADE</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant mt-0.5">Koşulsuz Garanti</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-lowest text-center flex flex-col items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-[22px]">bolt</span>
+<span class="font-label-caps text-[10px] font-semibold text-primary uppercase mt-1">AYNI GÜN</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant mt-0.5">Hızlı Sevkiyat</span>
+</div>
+</div>
+<!-- Detailed "Kit İçeriği" Section -->
+<div class="px-margin mt-8">
+<div class="flex items-center justify-between mb-4">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.14em] font-semibold">DETAYLI ENVANTER</span>
+<h2 class="font-headline-sm text-headline-sm text-primary font-semibold">Kit İçeriği</h2>
+</div>
+<span class="px-3 py-1 rounded-full bg-surface-container-highest text-secondary font-label-caps text-[10px] font-semibold uppercase">
+        Eksiksiz Set
+      </span>
+</div>
+<div class="flex flex-col gap-3">
+<!-- Item 1: Anatomik Format Büyük Eğitim Parmağı -->
+<div class="p-4 rounded-lg bg-surface-container-lowest flex gap-3 items-start shadow-sm">
+<div class="w-12 h-12 rounded-md bg-surface-container flex-shrink-0 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">front_hand</span>
+</div>
+<div class="flex flex-col gap-1 flex-1">
+<div class="flex items-center justify-between">
+<h3 class="font-label-md text-label-md font-semibold text-primary">Anatomik formatta büyük eğitim parmağı</h3>
+<span class="font-label-caps text-[10px] text-secondary bg-surface-container px-2 py-0.5 rounded">1 ADET</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Gerçek tırnak yapısını ve uygulama açısını daha yakından taklit edecek şekilde tasarlanmış eğitim parmağı.
+          </p>
+</div>
+</div>
+<!-- Item 2: 4 Farklı Freze Ucu -->
+<div class="p-4 rounded-lg bg-surface-container-lowest flex flex-col gap-3 shadow-sm">
+<div class="flex gap-3 items-start">
+<div class="w-12 h-12 rounded-md bg-surface-container flex-shrink-0 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">hardware</span>
+</div>
+<div class="flex flex-col gap-1 flex-1">
+<div class="flex items-center justify-between">
+<h3 class="font-label-md text-label-md font-semibold text-primary">4 farklı freze ucu</h3>
+<span class="font-label-caps text-[10px] text-secondary bg-surface-container px-2 py-0.5 rounded">4 ADET UÇ</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Manikür uygulamalarında farklı çalışma ihtiyaçlarına yönelik 4 farklı freze ucu (Alev Uç Mavi, Küre Uç Kırmızı, Konik Karbid Mavi, İnce Damla Kırmızı).
+            </p>
+</div>
+</div>
+<!-- Bits breakdown list -->
+<div class="grid grid-cols-2 gap-2 pt-2">
+<div class="flex items-center gap-2 p-2 rounded bg-surface-container-low">
+<span class="w-2.5 h-2.5 rounded-full bg-blue-600 flex-shrink-0"></span>
+<span class="font-label-sm text-label-sm text-primary font-medium">Alev Uç (Mavi)</span>
+</div>
+<div class="flex items-center gap-2 p-2 rounded bg-surface-container-low">
+<span class="w-2.5 h-2.5 rounded-full bg-red-600 flex-shrink-0"></span>
+<span class="font-label-sm text-label-sm text-primary font-medium">Küre Uç (Kırmızı)</span>
+</div>
+<div class="flex items-center gap-2 p-2 rounded bg-surface-container-low">
+<span class="w-2.5 h-2.5 rounded-full bg-blue-600 flex-shrink-0"></span>
+<span class="font-label-sm text-label-sm text-primary font-medium">Konik Karbid (Mavi)</span>
+</div>
+<div class="flex items-center gap-2 p-2 rounded bg-surface-container-low">
+<span class="w-2.5 h-2.5 rounded-full bg-red-600 flex-shrink-0"></span>
+<span class="font-label-sm text-label-sm text-primary font-medium">İnce Damla (Kırmızı)</span>
+</div>
+</div>
+</div>
+<!-- Item 3: 4 Farklı Değiştirilebilir Tırnak Formu -->
+<div class="p-4 rounded-lg bg-surface-container-lowest flex gap-3 items-start shadow-sm">
+<div class="w-12 h-12 rounded-md bg-surface-container flex-shrink-0 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">category</span>
+</div>
+<div class="flex flex-col gap-1 flex-1">
+<div class="flex items-center justify-between">
+<h3 class="font-label-md text-label-md font-semibold text-primary">4 farklı değiştirilebilir tırnak formu</h3>
+<span class="font-label-caps text-[10px] text-secondary bg-surface-container px-2 py-0.5 rounded">4 FORM</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Kare, Uzun kemerli kare, Yuvarlatılmış köşeli dikdörtgen, Badem.
+          </p>
+</div>
+</div>
+</div>
+<!-- Verbatim Closing Statement Card -->
+<div class="mt-4 p-4 rounded-lg bg-surface-container flex gap-3 items-start">
+<span class="material-symbols-outlined text-secondary text-[24px] flex-shrink-0 mt-0.5">school</span>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed italic">
+        "Eğitiminizi uygulamayla destekleyin. NAILAB Profesyonel Eğitim Kiti, tırnak eğitmenlerinin derslerini daha uygulamalı ve sistematik şekilde yürütmesine yardımcı olmak amacıyla geliştirilmiştir."
+      </p>
+</div>
+</div>
+<!-- Technical Specifications Table -->
+<div class="px-margin mt-8">
+<div class="flex items-center justify-between mb-3">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.14em] font-semibold">STANDARTLAR &amp; PARAMETRELER</span>
+<h2 class="font-headline-sm text-headline-sm text-primary font-semibold">Teknik Özellikler</h2>
+</div>
+<span class="font-label-caps text-[10px] text-on-surface-variant">ISO 13485 UYUMLU</span>
+</div>
+<div class="rounded-lg bg-surface-container-lowest overflow-hidden shadow-sm">
+<div class="flex items-center justify-between px-4 py-3 bg-surface-container-low">
+<span class="font-label-md text-label-md text-on-surface-variant">Gövde Malzemesi</span>
+<span class="font-label-md text-label-md font-medium text-primary">Medikal Düzey Platin Silikon &amp; ABS Taban</span>
+</div>
+<div class="flex items-center justify-between px-4 py-3 bg-surface-container-lowest">
+<span class="font-label-md text-label-md text-on-surface-variant">Freze Şaftı Uyumluluğu</span>
+<span class="font-label-md text-label-md font-medium text-primary">2.35 mm (Standart Salon &amp; Klinik)</span>
+</div>
+<div class="flex items-center justify-between px-4 py-3 bg-surface-container-low">
+<span class="font-label-md text-label-md text-on-surface-variant">Toplam Kutu Ağırlığı</span>
+<span class="font-label-md text-label-md font-medium text-primary">485 gram (Dengelenmiş Stand Tabanı)</span>
+</div>
+<div class="flex items-center justify-between px-4 py-3 bg-surface-container-lowest">
+<span class="font-label-md text-label-md text-on-surface-variant">Sterilizasyon Uygunluğu</span>
+<span class="font-label-md text-label-md font-medium text-primary">Otoklav &amp; UV Dezenfeksiyonuna Uygun</span>
+</div>
+<div class="flex items-center justify-between px-4 py-3 bg-surface-container-low">
+<span class="font-label-md text-label-md text-on-surface-variant">Menşei &amp; Tasarım</span>
+<span class="font-label-md text-label-md font-medium text-primary">Türkiye (NAILAB AR-GE Laboratuvarı)</span>
+</div>
+</div>
+</div>
+<!-- FAQ Accordion for Instructors -->
+<div class="px-margin mt-8">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.14em] font-semibold">SIKÇA SORULAN SORULAR</span>
+<h2 class="font-headline-sm text-headline-sm text-primary font-semibold mb-3">Eğitmen Danışma Notları</h2>
+<div class="flex flex-col gap-2">
+<details class="group rounded-lg bg-surface-container-lowest p-4 transition-all">
+<summary class="flex items-center justify-between font-label-md text-label-md font-medium text-primary cursor-pointer list-none">
+<span>Yedek tırnak formları ayrıca temin edilebilir mi?</span>
+<span class="material-symbols-outlined text-secondary transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+          Evet, öğrencilerinizin yoğun pratik seansları için 50'li ve 100'lü form paketleri NAILAB mağazasından sürekli olarak temin edilebilir.
+        </p>
+</details>
+<details class="group rounded-lg bg-surface-container-lowest p-4 transition-all">
+<summary class="flex items-center justify-between font-label-md text-label-md font-medium text-primary cursor-pointer list-none">
+<span>Toplu akademi siparişlerinde eğitmen indirimi var mı?</span>
+<span class="material-symbols-outlined text-secondary transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+          5 adet ve üzeri eğitim sınıfı alımlarında akademilere özel kurumsal indirim ve sertifikasyon materyali desteği sunulmaktadır. Eğitmen sekmesinden başvurabilirsiniz.
+        </p>
+</details>
+</div>
+</div>
+<!-- Sticky Bottom Buy Bar (Mobile Optimized) -->
+<div class="fixed bottom-16 left-0 right-0 z-40 bg-surface/95 backdrop-blur-xl px-margin py-3 shadow-[0_-4px_20px_rgba(96,67,46,0.08)] flex items-center justify-between gap-3">
+<div class="flex flex-col">
+<span class="font-label-caps text-[10px] text-secondary uppercase font-semibold">Özel Fiyat</span>
+<span class="font-headline-sm text-headline-sm font-semibold text-primary leading-tight">₺3.450,00</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant leading-none">Ücretsiz Kargo</span>
+</div>
+<div class="flex items-center gap-2">
+<!-- Mini counter -->
+<div class="flex items-center bg-surface-container rounded-full px-1.5 py-1">
+<button aria-label="Adet Azalt" class="w-7 h-7 rounded-full bg-surface-container-lowest text-primary flex items-center justify-center" onclick="adjustQty(-1)">
+<span class="material-symbols-outlined text-[15px]">remove</span>
+</button>
+<span class="w-6 text-center font-label-md text-label-md font-semibold text-primary" id="sticky-qty-display">1</span>
+<button aria-label="Adet Artır" class="w-7 h-7 rounded-full bg-surface-container-lowest text-primary flex items-center justify-center" onclick="adjustQty(1)">
+<span class="material-symbols-outlined text-[15px]">add</span>
+</button>
+</div>
+<!-- Sticky Buy Button -->
+<button class="px-5 h-11 rounded-full bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider flex items-center gap-2 active:scale-95 transition-all shadow-md" onclick="openMiniCart()">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span>Sepete Ekle</span>
+</button>
+</div>
+</div>
+<!-- MINI CART SLIDE-OVER DRAWER OVERLAY -->
+<div class="fixed inset-0 z-50 bg-primary/40 backdrop-blur-sm transition-opacity duration-300 opacity-0 pointer-events-none" id="mini-cart-overlay">
+<!-- Drawer Panel -->
+<div class="absolute top-0 right-0 bottom-0 w-full max-w-sm bg-surface shadow-2xl flex flex-col transform translate-x-full transition-transform duration-300 ease-out" id="mini-cart-panel">
+<!-- Drawer Header -->
+<div class="p-4 bg-surface-container-lowest flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">shopping_bag</span>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-primary">Sepetiniz</h3>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-caps text-[11px]" id="drawer-item-count">1 Ürün</span>
+</div>
+<button aria-label="Sepeti Kapat" class="w-9 h-9 rounded-full bg-surface-container text-primary flex items-center justify-center hover:bg-surface-variant transition-colors" onclick="closeMiniCart()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Free Shipping Tracker -->
+<div class="p-4 bg-secondary-container/30 flex flex-col gap-2">
+<div class="flex items-center justify-between text-secondary">
+<span class="font-label-sm text-label-sm font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+            Tebrikler! Ücretsiz kargo hakkı kazandınız.
+          </span>
+<span class="font-label-caps text-[10px] uppercase font-bold text-secondary">100%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-secondary-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full w-full"></div>
+</div>
+</div>
+<!-- Cart Items List (Scrollable) -->
+<div class="flex-1 overflow-y-auto p-4 flex flex-col gap-4">
+<!-- Item Card -->
+<div class="p-3 rounded-lg bg-surface-container-lowest flex gap-3 shadow-sm">
+<div class="w-16 h-16 rounded-md bg-surface-container flex-shrink-0 p-1 flex items-center justify-center">
+<img alt="Eğitim Parmağı" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WZ4-L525i8035W92t_x97J0W9c1y5uN8p3w8k0Z5_G9=s1000"/>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<h4 class="font-label-md text-label-md font-semibold text-primary leading-tight">NAILAB Profesyonel Eğitim Kiti</h4>
+<span class="font-label-caps text-[10px] text-secondary">4 Form + 4 Freze Ucu Dahil</span>
+</div>
+<button aria-label="Ürünü Çıkar" class="text-on-surface-variant hover:text-error transition-colors" onclick="removeDrawerItem()">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+<div class="flex items-center justify-between mt-2">
+<span class="font-label-md text-label-md font-bold text-primary" id="drawer-item-price">₺3.450,00</span>
+<div class="flex items-center bg-surface-container rounded-full px-1.5 py-0.5">
+<button class="w-6 h-6 rounded-full bg-surface-container-lowest text-primary flex items-center justify-center" onclick="adjustDrawerQty(-1)">
+<span class="material-symbols-outlined text-[14px]">remove</span>
+</button>
+<span class="w-6 text-center font-label-sm text-label-sm font-semibold text-primary" id="drawer-qty-val">1</span>
+<button class="w-6 h-6 rounded-full bg-surface-container-lowest text-primary flex items-center justify-center" onclick="adjustDrawerQty(1)">
+<span class="material-symbols-outlined text-[14px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Kit Value Add Callout -->
+<div class="p-3 rounded-lg bg-surface-container flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[22px]">card_giftcard</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-primary">Eğitmen Rehberi Hediyesi</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Dijital Müfredat Şablonu siparişinizle birlikte gönderilir.</span>
+</div>
+</div>
+</div>
+<!-- Drawer Footer Summary & Checkout CTA -->
+<div class="p-4 bg-surface-container-lowest shadow-[0_-4px_20px_rgba(0,0,0,0.05)] flex flex-col gap-3">
+<div class="flex items-center justify-between font-label-md text-label-md text-on-surface-variant">
+<span>Ara Toplam</span>
+<span class="font-medium text-primary" id="drawer-subtotal">₺3.450,00</span>
+</div>
+<div class="flex items-center justify-between font-label-md text-label-md text-on-surface-variant">
+<span>Kargo</span>
+<span class="font-medium text-secondary uppercase font-semibold">ÜCRETSİZ</span>
+</div>
+<div class="flex items-center justify-between font-headline-sm text-headline-sm font-semibold text-primary pt-2">
+<span>Toplam</span>
+<span id="drawer-total">₺3.450,00</span>
+</div>
+<button class="w-full h-12 rounded-full bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider flex items-center justify-center gap-2 hover:bg-primary-container transition-all active:scale-[0.99] shadow-md mt-1" onclick="proceedToCheckout()">
+<span>Sepeti Onayla / Ödemeye Geç</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<button class="w-full py-1 text-center font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors underline underline-offset-4" onclick="closeMiniCart()">
+          Alışverişe Devam Et
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  let currentQuantity = 1;
+  const unitPrice = 3450;
+
+  function switchImage(src, index) {
+    const mainImg = document.getElementById('main-product-img');
+    const counter = document.getElementById('gallery-counter');
+    if (mainImg) {
+      mainImg.style.opacity = '0.3';
+      setTimeout(() => {
+        mainImg.src = src;
+        mainImg.style.opacity = '1';
+      }, 150);
+    }
+    if (counter) {
+      counter.innerText = index + ' / 4';
+    }
+    // Update thumbnail highlights
+    const thumbs = document.querySelectorAll('.thumb-btn');
+    thumbs.forEach((btn, idx) => {
+      if (idx === index - 1) {
+        btn.classList.add('bg-surface-container-high');
+      } else {
+        btn.classList.remove('bg-surface-container-high');
+      }
+    });
+  }
+
+  function selectForm(index, name, desc, feature) {
+    for (let i = 1; i <= 4; i++) {
+      const card = document.getElementById('form-card-' + i);
+      if (card) {
+        if (i === index) {
+          card.classList.remove('text-on-surface-variant');
+          card.classList.add('bg-surface-container-high', 'text-primary');
+        } else {
+          card.classList.remove('bg-surface-container-high');
+          card.classList.add('text-on-surface-variant');
+        }
+      }
+    }
+    const titleEl = document.getElementById('form-active-title');
+    const descEl = document.getElementById('form-active-desc');
+    if (titleEl) titleEl.innerText = index + '. ' + name;
+    if (descEl) descEl.innerText = feature + ' - ' + desc;
+  }
+
+  function adjustQty(delta) {
+    currentQuantity = Math.max(1, currentQuantity + delta);
+    updateQuantities();
+  }
+
+  function adjustDrawerQty(delta) {
+    currentQuantity = Math.max(1, currentQuantity + delta);
+    updateQuantities();
+  }
+
+  function updateQuantities() {
+    const mainQty = document.getElementById('qty-display');
+    const stickyQty = document.getElementById('sticky-qty-display');
+    const drawerQty = document.getElementById('drawer-qty-val');
+    const drawerPrice = document.getElementById('drawer-item-price');
+    const drawerSubtotal = document.getElementById('drawer-subtotal');
+    const drawerTotal = document.getElementById('drawer-total');
+    const drawerCount = document.getElementById('drawer-item-count');
+
+    if (mainQty) mainQty.innerText = currentQuantity;
+    if (stickyQty) stickyQty.innerText = currentQuantity;
+    if (drawerQty) drawerQty.innerText = currentQuantity;
+
+    const totalVal = '₺' + (currentQuantity * unitPrice).toLocaleString('tr-TR', { minimumFractionDigits: 2 });
+    if (drawerPrice) drawerPrice.innerText = totalVal;
+    if (drawerSubtotal) drawerSubtotal.innerText = totalVal;
+    if (drawerTotal) drawerTotal.innerText = totalVal;
+    if (drawerCount) drawerCount.innerText = currentQuantity + ' Ürün';
+  }
+
+  function openMiniCart() {
+    const overlay = document.getElementById('mini-cart-overlay');
+    const panel = document.getElementById('mini-cart-panel');
+    if (overlay && panel) {
+      overlay.classList.remove('opacity-0', 'pointer-events-none');
+      overlay.classList.add('opacity-100');
+      panel.classList.remove('translate-x-full');
+      panel.classList.add('translate-x-0');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeMiniCart() {
+    const overlay = document.getElementById('mini-cart-overlay');
+    const panel = document.getElementById('mini-cart-panel');
+    if (overlay && panel) {
+      overlay.classList.remove('opacity-100');
+      overlay.classList.add('opacity-0', 'pointer-events-none');
+      panel.classList.remove('translate-x-0');
+      panel.classList.add('translate-x-full');
+      document.body.style.overflow = '';
+    }
+  }
+
+  function quickBuy() {
+    openMiniCart();
+  }
+
+  function removeDrawerItem() {
+    currentQuantity = 1;
+    updateQuantities();
+    closeMiniCart();
+  }
+
+  function proceedToCheckout() {
+    alert('Sipariş aşamasına yönlendiriliyorsunuz. Toplam: ₺' + (currentQuantity * unitPrice).toLocaleString('tr-TR', { minimumFractionDigits: 2 }));
+  }
+
+  // Close mini cart when tapping backdrop
+  document.getElementById('mini-cart-overlay')?.addEventListener('click', function(e) {
+    if (e.target === this) {
+      closeMiniCart();
+    }
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(96,67,46,0.05)]" data-active-classes="text-primary font-medium"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-1 min-w-[54px] h-12 text-on-surface-variant hover:text-primary transition-colors" data-path="ana-sayfa" href="#"><span class="material-symbols-outlined text-[20px]">home</span><span class="font-label-caps text-[10px] tracking-wider uppercase">Ana Sayfa</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[54px] h-12 text-on-surface-variant hover:text-primary transition-colors" data-path="magaza" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-label-caps text-[10px] tracking-wider uppercase">Mağaza</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[54px] h-12 text-on-surface-variant hover:text-primary transition-colors" data-path="egitmenler-icin" href="#"><span class="material-symbols-outlined text-[20px]">school</span><span class="font-label-caps text-[10px] tracking-wider uppercase">Eğitmen</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[54px] h-12 text-on-surface-variant hover:text-primary transition-colors" data-path="sepet" href="#"><span class="material-symbols-outlined text-[20px]">shopping_bag</span><span class="font-label-caps text-[10px] tracking-wider uppercase">Sepet</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[54px] h-12 text-on-surface-variant hover:text-primary transition-colors" data-path="iletisim" href="#"><span class="material-symbols-outlined text-[20px]">support_agent</span><span class="font-label-caps text-[10px] tracking-wider uppercase">İletişim</span></a></div></nav></body></html>

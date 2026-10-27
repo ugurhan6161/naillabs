@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="tr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "error": "#ba1a1a", "on-surface": "#1e1b18", "on-secondary-fixed-variant": "#5c412b", "surface-dim": "#e0d9d4", "error-container": "#ffdad6", "primary-container": "#1b1b1b", "inverse-on-surface": "#f7efea", "on-primary-container": "#848484", "primary": "#000000", "tertiary-container": "#2c1605", "inverse-primary": "#c6c6c6", "on-secondary-container": "#785b43", "on-primary-fixed-variant": "#474747", "on-background": "#1e1b18", "on-primary-fixed": "#1b1b1b", "secondary": "#765841", "on-tertiary-fixed": "#2c1605", "secondary-fixed-dim": "#e6bfa2", "on-error-container": "#93000a", "surface-variant": "#e9e1dc", "inverse-surface": "#33302d", "on-tertiary": "#ffffff", "outline": "#7e7576", "on-error": "#ffffff", "on-secondary-fixed": "#2b1705", "outline-variant": "#cfc4c5", "secondary-container": "#fdd5b8", "tertiary": "#000000", "on-secondary": "#ffffff", "tertiary-fixed": "#ffdcc5", "primary-fixed": "#e2e2e2", "surface-container-high": "#eee7e2", "surface-bright": "#fff8f4", "surface-container-low": "#faf2ed", "secondary-fixed": "#ffdcc3", "on-tertiary-fixed-variant": "#5d402c", "on-primary": "#ffffff", "primary-fixed-dim": "#c6c6c6", "tertiary-fixed-dim": "#e8bea3", "on-surface-variant": "#4c4546", "surface-container-lowest": "#ffffff", "surface-container": "#f4ece7", "on-tertiary-container": "#a07d64", "surface-container-highest": "#e9e1dc", "surface-tint": "#5e5e5e", "background": "#fff8f4", "surface": "#fff8f4" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "space-xl": "2.5rem", "margin": "1rem", "space-lg": "1.5rem", "margin-desktop": "3rem", "gutter": "1rem", "space-sm": "0.5rem", "space-md": "1rem", "gutter-desktop": "1.5rem", "space-xs": "0.25rem" }, fontFamily: { "label-caps": ["Outfit"], "body-lg": ["Outfit"], "headline-sm": ["Outfit"], "display-hero": ["Outfit"], "label-md": ["Outfit"], "label-sm": ["Outfit"], "headline-lg": ["Outfit"], "headline-md": ["Outfit"], "display-hero-mobile": ["Outfit"], "body-md": ["Outfit"], "body-sm": ["Outfit"] }, fontSize: { "label-caps": ["11px", { lineHeight: "16px", letterSpacing: "0.14em", fontWeight: "600" }], "body-lg": ["18px", { lineHeight: "28px", letterSpacing: "0em", fontWeight: "300" }], "headline-sm": ["20px", { lineHeight: "28px", letterSpacing: "0em", fontWeight: "600" }], "display-hero": ["56px", { lineHeight: "64px", letterSpacing: "-0.02em", fontWeight: "400" }], "label-md": ["14px", { lineHeight: "20px", letterSpacing: "0.02em", fontWeight: "500" }], "label-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "500" }], "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "500" }], "headline-md": ["24px", { lineHeight: "32px", letterSpacing: "0em", fontWeight: "500" }], "display-hero-mobile": ["36px", { lineHeight: "44px", letterSpacing: "-0.01em", fontWeight: "400" }], "body-md": ["15px", { lineHeight: "24px", letterSpacing: "0.01em", fontWeight: "400" }], "body-sm": ["13px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "400" }] } } } };</script><style>@layer base { html, body { width: 100%; margin: 0; padding: 0; } body { overscroll-behavior-y: none; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md antialiased min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(96,67,46,0.05)] pt-safe"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0 flex-1"><img alt="logoooooooo.jpeg" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1V0Ia-SrRMZ8fUk46OJjepSHjNxe9_MXhUeZmfi6neI0OV6O-_izr_PtEKf__X4r4UOB9YDlcHxiMw9anVBgpj0puMAB9gz4qHfzIJWxanjZp-IszVb7IGTjpzL8_KHF5dffQ1mG5-CEEnLD04fRdr0aUbIKYOuUHq6WvdToydj4vnO_tRyf0AlnjBsHJTOUPOxoUVk6HlBXkJNhkfaPgNf8ApZqzBHIfkkrttc8boYi__VBEX8mxWR-S3Hoasaw7xKKTpRybjhuOY"/><div class="flex flex-col min-w-0"><span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest leading-none truncate">NAILAB</span><span class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight leading-tight truncate">İletişim</span></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="Ara" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-variant/40 transition-colors"><span class="material-symbols-outlined text-[22px]">search</span></button><a aria-label="Sepet" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-variant/40 transition-colors relative" data-path="sepet" href="#"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-secondary ring-2 ring-surface"></span></a><a aria-label="Profil" class="w-11 h-11 flex items-center justify-center rounded-full hover:bg-surface-variant/40 transition-colors" data-path="hesap" href="#"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></a></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full">
+<!-- Editorial Intro & Studio Header -->
+<section class="px-margin pt-space-md pb-space-lg flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center justify-center w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary">Resmi Destek &amp; Konsültasyon</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">
+      İletişim &amp; Danışma Merkezi
+    </h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+      NAILAB™ Professional Nail Training System — İstanbul Ar-Ge &amp; Atölye stüdyomuza hoş geldiniz. Klinik eğitim ekipmanları, toptan sipariş ve kurumsal akademi iş birlikleri için uzman ekibimizle iletişime geçin.
+    </p>
+<!-- Studio Hero Visual Card -->
+<div class="relative w-full h-44 rounded-lg overflow-hidden mt-space-xs shadow-sm bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Editorial close-up of a high-end medical-grade aesthetic manicure training studio in Istanbul with warm cream tones, brushed rose gold precision instruments, tactile silicone finger models on marble surface, bathed in soft studio daylight, ultra clean and luxurious minimal atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6IRC06XihiDor1wc1djfh2r3GsCKFO6EFgH-VOR2xfKwTjUbIPnBOin3NfcVqiuRXLkOFxNI9azgNoHLdABVOI8fh0qWxyTQvJctsj084ykSBRYmXHLFEkK8oS908lnzcPUoqoUWHw0kJN4W_5HQY0ye8gGRdijzPNAfZOTOS0ZiJpZQpDfhjQrUzJINZHe0UijgF2Ghw5LB4JKOfCXl9ZANg82lqaxrAMycZLgigClB6D6wZWHrBIg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/70 via-transparent to-transparent flex items-end p-space-md">
+<div class="flex items-center gap-space-sm text-surface">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed">verified</span>
+<span class="font-label-sm text-label-sm text-surface tracking-wide">Kadıköy Ar-Ge Laboratuvarı &amp; Canlı Destek Üssü</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Communication Channels -->
+<section class="px-margin pb-space-lg flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">Hızlı Kanallar</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse"></span> Çevrimiçi Yanıt
+      </span>
+</div>
+<div class="grid grid-cols-1 gap-space-sm">
+<!-- WhatsApp Direct -->
+<a class="flex items-center justify-between p-space-md rounded bg-surface-container-lowest shadow-sm transition-transform active:scale-[0.99]" href="https://wa.me/905000000000" target="_blank">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-11 h-11 rounded-full bg-surface-container flex items-center justify-center text-on-surface flex-shrink-0">
+<span class="material-symbols-outlined text-[24px] text-secondary">chat</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">WhatsApp Danışma</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">+90 (542) 890 24 10 • Anında Yanıt</span>
+</div>
+</div>
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</div>
+</a>
+<!-- Corporate Email -->
+<a class="flex items-center justify-between p-space-md rounded bg-surface-container-lowest shadow-sm transition-transform active:scale-[0.99]" href="mailto:destek@nailab.com.tr">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-11 h-11 rounded-full bg-surface-container flex items-center justify-center text-on-surface flex-shrink-0">
+<span class="material-symbols-outlined text-[24px] text-secondary">mail</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Kurumsal E-posta</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">destek@nailab.com.tr • 2 Saat İçinde</span>
+</div>
+</div>
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</div>
+</a>
+<!-- Working Hours -->
+<div class="flex items-center justify-between p-space-md rounded bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-11 h-11 rounded-full bg-surface-container flex items-center justify-center text-on-surface flex-shrink-0">
+<span class="material-symbols-outlined text-[24px] text-secondary">schedule</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Çalışma Saatleri</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Hafta içi 09:00 – 18:00 (GMT+3)</span>
+</div>
+</div>
+<span class="font-label-caps text-label-caps uppercase text-secondary bg-surface-container px-space-xs py-1 rounded">Aktif</span>
+</div>
+</div>
+</section>
+<!-- Interactive Contact Form -->
+<section class="px-margin pb-space-lg flex flex-col gap-space-sm">
+<div class="p-space-lg rounded bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">Doğrudan İletim</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold">Hızlı Mesaj Gönder</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Eğitim kitleri, freze uyumluluğu veya siparişleriniz için teknik konsültanlarımız hemen dönüş yapar.</p>
+</div>
+<form class="flex flex-col gap-space-md" id="contact-form" onsubmit="event.preventDefault(); handleFormSubmit();">
+<!-- Full Name -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface font-medium" for="contact-name">Ad Soyad</label>
+<input class="w-full px-space-md py-3 rounded bg-surface-container text-on-surface font-body-md text-body-md placeholder:text-outline focus:bg-surface focus:outline-none transition-colors" id="contact-name" placeholder="Örn: Melis Demir" required="" type="text"/>
+</div>
+<!-- Email -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface font-medium" for="contact-email">E-posta Adresi</label>
+<input class="w-full px-space-md py-3 rounded bg-surface-container text-on-surface font-body-md text-body-md placeholder:text-outline focus:bg-surface focus:outline-none transition-colors" id="contact-email" placeholder="adiniz@ornek.com" required="" type="email"/>
+</div>
+<!-- Topic Selector Chips -->
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-label-sm text-on-surface font-medium">Konu Başlığı</label>
+<div class="grid grid-cols-3 gap-space-xs" id="topic-container">
+<button class="topic-chip py-2 px-2 rounded-full font-label-sm text-label-sm text-center bg-primary text-on-primary transition-all" onclick="selectTopic(this, 'Sipariş Durumu')" type="button">Sipariş</button>
+<button class="topic-chip py-2 px-2 rounded-full font-label-sm text-label-sm text-center bg-surface-container text-on-surface hover:bg-surface-variant transition-all" onclick="selectTopic(this, 'Ürün &amp; Freze Bilgisi')" type="button">Ürün Bilgisi</button>
+<button class="topic-chip py-2 px-2 rounded-full font-label-sm text-label-sm text-center bg-surface-container text-on-surface hover:bg-surface-variant transition-all" onclick="selectTopic(this, 'Akademi &amp; Eğitmen')" type="button">Akademi</button>
+</div>
+<input id="selected-topic" type="hidden" value="Sipariş Durumu"/>
+</div>
+<!-- Message -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface font-medium" for="contact-message">Mesajınız</label>
+<textarea class="w-full px-space-md py-3 rounded bg-surface-container text-on-surface font-body-md text-body-md placeholder:text-outline focus:bg-surface focus:outline-none transition-colors resize-none" id="contact-message" placeholder="Sorunuzu veya talebinizi detaylıca paylaşın..." required="" rows="4"></textarea>
+</div>
+<!-- Privacy agreement hint -->
+<div class="flex items-start gap-2 pt-1">
+<input class="mt-1 w-4 h-4 rounded text-primary focus:ring-0" id="kvkk-consent" required="" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-on-surface-variant" for="kvkk-consent">
+            KVKK kapsamında kişisel verilerimin iletişim süreçlerinde işlenmesini onaylıyorum.
+          </label>
+</div>
+<!-- Submit Button -->
+<button class="w-full mt-space-xs py-3.5 px-6 rounded-full bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider flex items-center justify-center gap-2 hover:bg-neutral-800 active:scale-[0.98] transition-all" id="submit-btn" type="submit">
+<span>Mesajı Gönder</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+<!-- Feedback Success Alert (Hidden by default) -->
+<div class="hidden p-space-md rounded bg-surface-container text-on-surface flex items-center gap-space-sm mt-space-xs animate-fade-in" id="form-success">
+<span class="material-symbols-outlined text-secondary text-[22px]">check_circle</span>
+<span class="font-body-sm text-body-sm">Mesajınız Ar-Ge stüdyomuza iletildi. En geç 2 saat içinde dönüş sağlanacaktır.</span>
+</div>
+</form>
+</div>
+</section>
+<!-- Interactive Accordion FAQ -->
+<section class="px-margin pb-space-lg flex flex-col gap-space-sm">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">Sıkça Sorulan Sorular</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold">Teknik &amp; Klinik Merak Edilenler</h2>
+</div>
+<div class="flex flex-col gap-space-xs" id="faq-accordion">
+<!-- FAQ 1 -->
+<div class="rounded bg-surface-container-lowest shadow-sm overflow-hidden transition-colors">
+<button class="w-full p-space-md text-left flex items-center justify-between gap-space-sm" onclick="toggleFaq(this)" type="button">
+<span class="font-label-md text-label-md text-on-surface font-medium leading-snug">Kit içindeki parmak silikonu otoklav sterilizasyonuna uygun mu?</span>
+<span class="material-symbols-outlined text-secondary transform transition-transform duration-200 faq-icon text-[20px]">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md pt-0 text-on-surface-variant font-body-sm text-body-sm leading-relaxed">
+          Evet, tüm NAILAB™ antrenman parmakları cerrahi standartlarda medikal derece platin kürlemeli silikondan üretilmiştir. 134°C buhar otoklavında, kuru hava sterilizatörlerinde ve tüm hastane sınıfı kuaterner amonyum dezenfektan banyolarında formu bozulmadan defalarca steril edilebilir.
+        </div>
+</div>
+<!-- FAQ 2 -->
+<div class="rounded bg-surface-container-lowest shadow-sm overflow-hidden transition-colors">
+<button class="w-full p-space-md text-left flex items-center justify-between gap-space-sm" onclick="toggleFaq(this)" type="button">
+<span class="font-label-md text-label-md text-on-surface font-medium leading-snug">Farklı freze makinelerine uyar mı?</span>
+<span class="material-symbols-outlined text-secondary transform transition-transform duration-200 faq-icon text-[20px]">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md pt-0 text-on-surface-variant font-body-sm text-body-sm leading-relaxed">
+          Evet, freze uçlarımız ve tırnak sabitleme aparatlarımız uluslararası ISO standart 3/32 inç (2.35 mm) şaft çapına sahiptir. Marathon, Strong, Saeyang ve piyasadaki tüm profesyonel mikromotor cihazlarıyla %100 mekanik uyumludur.
+        </div>
+</div>
+<!-- FAQ 3 -->
+<div class="rounded bg-surface-container-lowest shadow-sm overflow-hidden transition-colors">
+<button class="w-full p-space-md text-left flex items-center justify-between gap-space-sm" onclick="toggleFaq(this)" type="button">
+<span class="font-label-md text-label-md text-on-surface font-medium leading-snug">Yedek tırnak formları ayrıca temin edilebilir mi?</span>
+<span class="material-symbols-outlined text-secondary transform transition-transform duration-200 faq-icon text-[20px]">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md pt-0 text-on-surface-variant font-body-sm text-body-sm leading-relaxed">
+          Kesinlikle. Farklı kavis ve tırnak plağı yapılarına sahip (C-curve, Flat, Natural) yedek tırnak yatakları 40'lı ve 100'lü hijyenik ambalajlarda "Mağaza" sekmesinde bağımsız olarak satışa sunulmaktadır.
+        </div>
+</div>
+<!-- FAQ 4 -->
+<div class="rounded bg-surface-container-lowest shadow-sm overflow-hidden transition-colors">
+<button class="w-full p-space-md text-left flex items-center justify-between gap-space-sm" onclick="toggleFaq(this)" type="button">
+<span class="font-label-md text-label-md text-on-surface font-medium leading-snug">Akademi ve toplu eğitmen alımlarında sertifikasyon desteği var mı?</span>
+<span class="material-symbols-outlined text-secondary transform transition-transform duration-200 faq-icon text-[20px]">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md pt-0 text-on-surface-variant font-body-sm text-body-sm leading-relaxed">
+          Evet. 5 set ve üzeri kurumsal alımlarda resmi akredite müfredat rehberi, dijital öğrenci değerlendirme matrisi ve akademi eğitmen belgesi stüdyomuz tarafından pakete dahil olarak sağlanmaktadır.
+        </div>
+</div>
+</div>
+</section>
+<!-- Visual Laboratory Spotlight -->
+<section class="px-margin pb-space-lg">
+<div class="rounded-lg p-space-md bg-surface-container flex items-center gap-space-md">
+<div class="w-20 h-20 rounded-md overflow-hidden flex-shrink-0 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Macro view of precision surgical micro-drill titanium gold burr head with diamond coating standing on clinical mirror tray" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcAsYdbmouPSRl-4qqMsKluxutraTDNmGY2v-WVlEGba21vjZfh3M-6gKiOclwd7juDspsX-2TbfPgUghYijuMya6veHYal5CrLlr-aHE1_elk41f8i6ArCibfM0_qw4ElFoo9FZfhD2y4dA5AlT_U9oGxVPYdmnMcsDfIeNJx6gxDR6cqkyvaKARSa7QbUKGQOPCTxA_hnW5nEiv9K-yRX7Nd4wnZhApDZJ_dlOLjJ-3xI959CNm53g"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Klinik Standart</span>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">ISO 13485 Sertifikalı Üretim</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">Tüm prototipler diş hekimliği ve dermatoloji standartlarında biyouyumluluk testlerinden geçirilir.</span>
+</div>
+</div>
+</section>
+<!-- Clinical & Payment Security Badges -->
+<section class="px-margin pb-space-lg flex flex-col gap-space-sm">
+<div class="grid grid-cols-3 gap-space-xs">
+<div class="p-space-sm rounded bg-surface-container-lowest shadow-sm flex flex-col items-center text-center gap-1">
+<span class="material-symbols-outlined text-[24px] text-secondary">lock</span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface">256-Bit SSL</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Uçtan Uca Şifreli</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-lowest shadow-sm flex flex-col items-center text-center gap-1">
+<span class="material-symbols-outlined text-[24px] text-secondary">health_and_safety</span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface">Medikal Derece</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Platin Silikon</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-lowest shadow-sm flex flex-col items-center text-center gap-1">
+<span class="material-symbols-outlined text-[24px] text-secondary">local_shipping</span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface">Aynı Gün</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">İstanbul Atölye</span>
+</div>
+</div>
+</section>
+<!-- Legal & Corporate Compliance Section (Footer Pattern) -->
+<footer class="px-margin pb-space-xl pt-space-lg bg-surface-container-high rounded-t-lg flex flex-col gap-space-md">
+<!-- Legal Registration Specs -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">Kurumsal Kimlik</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">NAILAB Kozmetik &amp; Medikal Donanım Ltd. Şti.</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+        Merkez Ar-Ge ve Sevkiyat Atölyesi: Osmanağa Mah. Süleymanpaşa Sok. No: 44/2, Kadıköy / İstanbul • Türkiye
+      </p>
+</div>
+<!-- Official Registry Data -->
+<div class="grid grid-cols-2 gap-space-sm p-space-md rounded bg-surface-container-lowest">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Vergi Dairesi &amp; No</span>
+<span class="font-body-md text-body-md text-on-surface font-medium mt-0.5">Erenköy V.D. / 1234567890</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">MERSİS Numarası</span>
+<span class="font-body-md text-body-md text-on-surface font-medium mt-0.5">0123456789000001</span>
+</div>
+</div>
+<!-- Legal Policy Navigation Links -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">Yasal &amp; Mevzuat Bildirimleri</span>
+<div class="flex flex-wrap gap-x-space-md gap-y-2 pt-1">
+<a class="font-label-sm text-label-sm text-on-surface hover:text-secondary transition-colors underline decoration-outline-variant underline-offset-4" href="#mesafeli-satis">Mesafeli Satış Sözleşmesi</a>
+<a class="font-label-sm text-label-sm text-on-surface hover:text-secondary transition-colors underline decoration-outline-variant underline-offset-4" href="#on-bilgilendirme">Ön Bilgilendirme Formu</a>
+<a class="font-label-sm text-label-sm text-on-surface hover:text-secondary transition-colors underline decoration-outline-variant underline-offset-4" href="#kvkk">KVKK ve Gizlilik Politikası</a>
+<a class="font-label-sm text-label-sm text-on-surface hover:text-secondary transition-colors underline decoration-outline-variant underline-offset-4" href="#cerez">Çerez (Cookie) Aydınlatması</a>
+</div>
+</div>
+<!-- Copyright Microcopy -->
+<div class="pt-space-sm flex flex-col gap-1">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>© 2025 NAILAB™. Tüm hakları saklıdır.</span>
+<span>v2.4 Editorial Core</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px] leading-tight">
+        Bu platformdaki tüm anatomik tırnak yatağı tasarımları ve eğitim sistemleri uluslararası patent koruması altındadır.
+      </span>
+</div>
+</footer>
+</div>
+<script>
+  function selectTopic(button, value) {
+    const container = document.getElementById('topic-container');
+    const buttons = container.querySelectorAll('.topic-chip');
+    buttons.forEach(btn => {
+      btn.classList.remove('bg-primary', 'text-on-primary');
+      btn.classList.add('bg-surface-container', 'text-on-surface');
+    });
+    button.classList.remove('bg-surface-container', 'text-on-surface');
+    button.classList.add('bg-primary', 'text-on-primary');
+    document.getElementById('selected-topic').value = value;
+  }
+
+  function toggleFaq(button) {
+    const content = button.nextElementSibling;
+    const icon = button.querySelector('.faq-icon');
+    const isHidden = content.classList.contains('hidden');
+    
+    // Close other FAQ items for clean focus
+    document.querySelectorAll('.faq-content').forEach(el => el.classList.add('hidden'));
+    document.querySelectorAll('.faq-icon').forEach(ic => ic.style.transform = 'rotate(0deg)');
+
+    if (isHidden) {
+      content.classList.remove('hidden');
+      icon.style.transform = 'rotate(180deg)';
+    } else {
+      content.classList.add('hidden');
+      icon.style.transform = 'rotate(0deg)';
+    }
+  }
+
+  function handleFormSubmit() {
+    const btn = document.getElementById('submit-btn');
+    const successMsg = document.getElementById('form-success');
+    btn.disabled = true;
+    btn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span><span>İletiliyor...</span>';
+    
+    setTimeout(() => {
+      btn.innerHTML = '<span>İletildi</span><span class="material-symbols-outlined text-[18px]">done</span>';
+      successMsg.classList.remove('hidden');
+      document.getElementById('contact-name').value = '';
+      document.getElementById('contact-email').value = '';
+      document.getElementById('contact-message').value = '';
+    }, 600);
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(96,67,46,0.06)]" data-active-classes="text-primary font-semibold"><div class="h-16 px-space-xs flex items-center justify-around"><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="ana-sayfa" href="#"><span class="material-symbols-outlined text-[22px]">home</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Ana Sayfa</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="magaza" href="#"><span class="material-symbols-outlined text-[22px]">storefront</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Mağaza</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="egitmen" href="#"><span class="material-symbols-outlined text-[22px]">school</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Eğitmen</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors relative" data-path="sepet" href="#"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Sepet</span><span class="absolute top-1 right-3.5 w-1.5 h-1.5 rounded-full bg-secondary"></span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="iletisim" href="#"><span class="material-symbols-outlined text-[22px]">support_agent</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">İletişim</span></a></div></nav></body></html>

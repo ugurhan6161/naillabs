@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<html lang="tr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-primary-fixed-variant": "#474747", "on-secondary-container": "#785b43", "on-error-container": "#93000a", "error-container": "#ffdad6", "on-error": "#ffffff", "on-primary": "#ffffff", "error": "#ba1a1a", "primary-container": "#1b1b1b", "on-tertiary-fixed": "#2c1605", "surface-container-lowest": "#ffffff", "on-tertiary-container": "#a07d64", "on-tertiary-fixed-variant": "#5d402c", "surface-container-high": "#eee7e2", "on-primary-fixed": "#1b1b1b", "on-background": "#1e1b18", "tertiary-fixed": "#ffdcc5", "on-tertiary": "#ffffff", "tertiary-container": "#2c1605", "background": "#fff8f4", "surface": "#fff8f4", "primary": "#000000", "surface-container-low": "#faf2ed", "outline-variant": "#cfc4c5", "secondary-container": "#fdd5b8", "outline": "#7e7576", "surface-dim": "#e0d9d4", "surface-tint": "#5e5e5e", "surface-container": "#f4ece7", "secondary-fixed-dim": "#e6bfa2", "primary-fixed-dim": "#c6c6c6", "surface-bright": "#fff8f4", "inverse-surface": "#33302d", "primary-fixed": "#e2e2e2", "on-surface-variant": "#4c4546", "secondary": "#765841", "secondary-fixed": "#ffdcc3", "on-secondary-fixed": "#2b1705", "on-secondary": "#ffffff", "inverse-primary": "#c6c6c6", "surface-variant": "#e9e1dc", "on-primary-container": "#848484", "on-surface": "#1e1b18", "surface-container-highest": "#e9e1dc", "inverse-on-surface": "#f7efea", "tertiary-fixed-dim": "#e8bea3", "on-secondary-fixed-variant": "#5c412b", "tertiary": "#000000" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "margin-desktop": "3rem", "margin": "1rem", "gutter": "1rem", "space-lg": "1.5rem", "gutter-desktop": "1.5rem", "space-xs": "0.25rem", "space-md": "1rem", "space-sm": "0.5rem", "space-xl": "2.5rem" }, fontFamily: { "display-hero-mobile": ["Outfit"], "headline-lg": ["Outfit"], "label-md": ["Outfit"], "body-md": ["Outfit"], "headline-sm": ["Outfit"], "body-sm": ["Outfit"], "headline-md": ["Outfit"], "label-caps": ["Outfit"], "display-hero": ["Outfit"], "body-lg": ["Outfit"], "label-sm": ["Outfit"] }, fontSize: { "display-hero-mobile": ["36px", { lineHeight: "44px", letterSpacing: "-0.01em", fontWeight: "400" }], "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "500" }], "label-md": ["14px", { lineHeight: "20px", letterSpacing: "0.02em", fontWeight: "500" }], "body-md": ["15px", { lineHeight: "24px", letterSpacing: "0.01em", fontWeight: "400" }], "headline-sm": ["20px", { lineHeight: "28px", letterSpacing: "0em", fontWeight: "600" }], "body-sm": ["13px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "400" }], "headline-md": ["24px", { lineHeight: "32px", letterSpacing: "0em", fontWeight: "500" }], "label-caps": ["11px", { lineHeight: "16px", letterSpacing: "0.14em", fontWeight: "600" }], "display-hero": ["56px", { lineHeight: "64px", letterSpacing: "-0.02em", fontWeight: "400" }], "body-lg": ["18px", { lineHeight: "28px", letterSpacing: "0em", fontWeight: "300" }], "label-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "500" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#fff8f4;}body{overscroll-behavior:none;-webkit-font-smoothing:antialiased;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(96,67,46,0.04)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><img alt="NAILAB logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V0Ia-SrRMZ8fUk46OJjepSHjNxe9_MXhUeZmfi6neI0OV6O-_izr_PtEKf__X4r4UOB9YDlcHxiMw9anVBgpj0puMAB9gz4qHfzIJWxanjZp-IszVb7IGTjpzL8_KHF5dffQ1mG5-CEEnLD04fRdr0aUbIKYOuUHq6WvdToydj4vnO_tRyf0AlnjBsHJTOUPOxoUVk6HlBXkJNhkfaPgNf8ApZqzBHIfkkrttc8boYi__VBEX8mxWR-S3Hoasaw7xKKTpRybjhuOY"/><div class="flex flex-col"><span class="font-label-caps text-label-caps uppercase text-primary tracking-[0.18em] leading-none">NAILAB™</span><span class="font-label-sm text-label-sm text-secondary tracking-normal leading-none mt-1">Ana Sayfa</span></div></div><div class="flex items-center gap-space-xs"><button aria-label="Arama Yap" class="w-11 h-11 flex items-center justify-center rounded-full text-primary hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[22px]">search</span></button><a aria-label="Sepet" class="relative w-11 h-11 flex items-center justify-center rounded-full text-primary hover:bg-surface-container transition-colors" data-path="sepet" href="#"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute top-2 right-2 min-w-[16px] h-4 px-1 rounded-full bg-secondary text-on-secondary font-label-caps text-[10px] leading-4 text-center font-semibold">0</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-1"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full px-margin pb-space-xl gap-space-lg">
+<!-- Interactive Demo Filter / State Tabs -->
+<section class="flex flex-col gap-space-sm pt-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.14em]">Protokol &amp; Sistem Bildirimleri</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-2 py-0.5 rounded-full">v2.4 Canlı Teftiş</span>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm">
+<h2 class="font-headline-sm text-headline-sm text-on-surface leading-snug">Durum &amp; Etkileşim Merkezi</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+        Klinik estetik standartlarında formüle edilmiş geri bildirim toast'ları, hata çözümleri ve sipariş operasyon sheet önizlemeleri.
+      </p>
+</div>
+</section>
+<!-- Interactive Live Toast Stack -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h3 class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Canlı Bildirim Panelleri (Toasts)</h3>
+<span class="font-label-sm text-label-sm text-secondary">3 Aktif Bildirim</span>
+</div>
+<!-- Success Toast -->
+<div class="group relative overflow-hidden bg-surface-container-lowest rounded-xl p-space-md shadow-md flex items-start gap-space-sm transition-all active:scale-[0.99]">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0 pr-2">
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Başarılı İşlem</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Şimdi</span>
+</div>
+<p class="font-headline-sm text-[15px] text-on-surface mt-0.5 leading-snug">Ürün Sepete Eklendi!</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Eğitim Kiti (Master Pro) × 1 • ₺3.450,00</p>
+<div class="mt-2 flex items-center gap-space-sm">
+<a class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary font-medium" data-path="sepet" href="#">
+            Sepete Git
+            <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<button aria-label="Bildirimi Kapat" class="text-on-surface-variant hover:text-on-surface shrink-0 p-1">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Info / Academy Discount Toast -->
+<div class="group relative overflow-hidden bg-surface-container-lowest rounded-xl p-space-md shadow-md flex items-start gap-space-sm transition-all">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center shrink-0 text-on-secondary-container">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0 pr-2">
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Akademi Avantajı</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2 dk önce</span>
+</div>
+<p class="font-headline-sm text-[15px] text-on-surface mt-0.5 leading-snug">Akademi İndirimi Uygulandı</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sertifikalı uzman kaydınızla sepetinize %15 doğrudan teşvik yansıtıldı.</p>
+</div>
+<button aria-label="Bildirimi Kapat" class="text-on-surface-variant hover:text-on-surface shrink-0 p-1">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Error / Alert Toast -->
+<div class="group relative overflow-hidden bg-surface-container-lowest rounded-xl p-space-md shadow-md flex items-start gap-space-sm transition-all">
+<div class="w-10 h-10 rounded-full bg-error-container flex items-center justify-center shrink-0 text-on-error-container">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">error</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0 pr-2">
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps text-error uppercase tracking-widest">Kritik Hata</span>
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Zaman Aşımı</span>
+</div>
+<p class="font-headline-sm text-[15px] text-on-surface mt-0.5 leading-snug">Ödeme Tamamlanamadı</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Kart limiti yetersiz veya 3D Secure doğrulama süresi doldu.</p>
+</div>
+<button aria-label="Bildirimi Kapat" class="text-on-surface-variant hover:text-on-surface shrink-0 p-1">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</section>
+<!-- Editorial Visual Break: Clinical Instrumentation & Sterility -->
+<section class="relative overflow-hidden rounded-xl bg-surface-container-low shadow-sm">
+<div class="w-full h-36 bg-cover bg-center" data-alt="Close-up macro photography of precision surgical stainless steel manicure instruments and rose gold diamond-cut bits laid neatly on sterilized surgical fabric in soft ambient warm studio lighting with clinical minimalism." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDePrDf6AODMqpHaGThpWqTFMzmBYIN-bxGuqlFsoo7CRPNCRGUz3BAxwpPsl7S8ICAzd6BoE78wn_6aHKsG9IrPbcRhpO4EgQFeNb_mxvjJofLhKFp2wSiLjrYVoCn-EJNiEDteY0sQL8inPw9I5a8PGwc1SuLTGIoEfi0wRvYsl2RGOOEOOYSwXC9j3U64zKkr7bQWGrV8t-5num4i9Dq2f2R4G6HRX5dZEUVlYqtwb4WDQW_aXSvyA')"></div>
+<div class="p-space-md flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Kalite Güvencesi</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant bg-surface-container px-2 py-0.5 rounded-full">ISO 13485 Uyumlu</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Tüm eğitim aparatları ve sterilizasyon mühürleri teftiş barkodlu olarak sevk edilmektedir.
+      </p>
+</div>
+</section>
+<!-- Modal Pattern: Payment Failure (#ERR-304) -->
+<section class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs px-1">
+<span class="material-symbols-outlined text-[18px] text-error">shield_lock</span>
+<h3 class="font-label-md text-label-md text-on-surface uppercase tracking-wider">İşlem Hata Modalı (Önizleme)</h3>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-md flex flex-col items-center text-center relative overflow-hidden">
+<!-- Status Badge Accent Ring -->
+<div class="w-16 h-16 rounded-full bg-error-container flex items-center justify-center text-on-error-container mb-space-sm shadow-sm">
+<span class="material-symbols-outlined text-[32px]">credit_card_off</span>
+</div>
+<span class="font-label-caps text-label-caps text-error uppercase tracking-[0.18em] mb-1">Hata Kodu: #ERR-304</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Ödeme Gerçekleştirilemedi</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs max-w-xs">
+        Bankanız güvenlik gerekçesiyle provizyon vermedi. Kartınızın e-ticaret limitini inceleyebilir veya alternatif protokolü seçebilirsiniz.
+      </p>
+<!-- Details Capsule -->
+<div class="w-full bg-surface-container-low rounded-lg p-space-sm my-space-md text-left flex flex-col gap-1">
+<div class="flex justify-between items-center text-[12px]">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Referans No:</span>
+<span class="font-label-caps text-label-caps text-on-surface font-semibold">NLB-TXN-9941</span>
+</div>
+<div class="flex justify-between items-center text-[12px]">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sistem Yanıtı:</span>
+<span class="font-body-sm text-body-sm text-error font-medium">Banka Reddi (Soft Decline)</span>
+</div>
+</div>
+<!-- Action Cluster -->
+<div class="flex flex-col w-full gap-space-sm">
+<button class="w-full h-12 rounded-full bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider flex items-center justify-center gap-space-xs active:scale-[0.98] transition-transform shadow-md">
+<span class="material-symbols-outlined text-[18px]">replay</span>
+          Farklı Kartla Tekrar Dene
+        </button>
+<button class="w-full h-12 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md uppercase tracking-wider flex items-center justify-center gap-space-xs hover:bg-surface-variant active:scale-[0.98] transition-colors">
+<span class="material-symbols-outlined text-[18px]">account_balance</span>
+          Havale / EFT ile Devam Et
+        </button>
+</div>
+</div>
+</section>
+<!-- Bottom Sheet Pattern: Cancellation & Return Request -->
+<section class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs px-1">
+<span class="material-symbols-outlined text-[18px] text-secondary">assignment_return</span>
+<h3 class="font-label-md text-label-md text-on-surface uppercase tracking-wider">İptal &amp; İade Onay Sheet'i</h3>
+</div>
+<!-- Sheet Simulated Frame -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-md flex flex-col gap-space-md">
+<!-- Sheet Handle Drag Indicator -->
+<div class="w-12 h-1.5 rounded-full bg-surface-variant mx-auto mb-1"></div>
+<div class="flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Sipariş Kaydı</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">#NLB-849201</span>
+</div>
+<h4 class="font-headline-sm text-[18px] text-on-surface mt-1 leading-snug">
+          Siparişi İptal Etmek İstediğinize Emin Misiniz?
+        </h4>
+</div>
+<!-- Clinical Hygiene Disclaimer -->
+<div class="bg-surface-container-low rounded-lg p-space-sm flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">verified_user</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Klinik sterilizasyon bandı mühürlenmiş siparişler için iade süreci, merkez atölye teknik laboratuvar onayından sonra başlatılır.
+        </p>
+</div>
+<!-- Selectable Reasons List (Interactive Simulated Radios) -->
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-on-surface font-medium">İptal Nedeni Seçiniz</span>
+<label class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<input checked="" class="accent-primary w-4 h-4 cursor-pointer" name="cancel_reason" type="radio" value="change_mind"/>
+<span class="font-body-sm text-body-sm text-on-surface">Fikir değiştirdim</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Genel</span>
+</label>
+<label class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<input class="accent-primary w-4 h-4 cursor-pointer" name="cancel_reason" type="radio" value="wrong_address"/>
+<span class="font-body-sm text-body-sm text-on-surface">Hatalı teslimat adresi girdim</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Lojistik</span>
+</label>
+<label class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<input class="accent-primary w-4 h-4 cursor-pointer" name="cancel_reason" type="radio" value="other"/>
+<span class="font-body-sm text-body-sm text-on-surface">Farklı bir model sipariş edeceğim</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Diğer</span>
+</label>
+</div>
+<!-- Action Button Group -->
+<div class="flex flex-col gap-space-sm pt-2">
+<button class="w-full h-12 rounded-full bg-tertiary-container text-on-tertiary font-label-md text-label-md uppercase tracking-wider flex items-center justify-center gap-2 active:scale-[0.98] transition-transform">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+          İptal Talebi Oluştur
+        </button>
+<button class="w-full h-12 rounded-full bg-surface-container text-on-surface font-label-md text-label-md uppercase tracking-wider flex items-center justify-center hover:bg-surface-variant transition-colors">
+          Vazgeç / Siparişi Koru
+        </button>
+</div>
+</div>
+</section>
+<!-- Stock Waitlist / Restock Alert Modal -->
+<section class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs px-1">
+<span class="material-symbols-outlined text-[18px] text-secondary">notifications_active</span>
+<h3 class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Stok Bildirimi &amp; Bekleme Listesi</h3>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-md flex flex-col gap-space-md relative overflow-hidden">
+<!-- Top Header & Image Mini Thumbnail -->
+<div class="flex items-center gap-space-md">
+<img class="w-16 h-16 rounded-lg object-cover shrink-0 bg-surface-container" data-alt="Macro product photo of medical grade interchangeable titanium nail bits and precision drill heads in an elegant sterile transparent luxury case." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzx6SyEhkgZhWXzyEe4NF1ru7lM9qGBmvvUvY3OC7oPkyUOOFaSs2U6x2kkKpPKOh1qFZx7AP746bENDIZdu5OH8PS14MCHJeTQHtbjphkvZjEJEddRtfae4-3BcTxENkKkFlzG-_rGwQ54p4ZNjQmCPFvlqITwU8zFRTx8RBaTgOXpU-hQ52go1vK5kQnnV1K0cymuUIr6Q8p1S_cvaR7LwAX6q_qThWaF_v8_lH3kFPORLYlMTq6nw"/>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Tükendi</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Parti 08</span>
+</div>
+<h4 class="font-headline-sm text-[16px] text-on-surface truncate">Değiştirilebilir Freze Uçları</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Surgical Grade Titanyum Seri</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm">
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Yeni üretim partisi kalite kontrol aşamasındadır. Ürün stoka girdiği anda öncelikli rezervasyon bağlantısı ile haberdar olun.
+        </p>
+</div>
+<!-- Restock Subscription Form -->
+<form class="flex flex-col gap-space-sm" id="stockAlertForm" onsubmit="event.preventDefault(); const btn=this.querySelector('button'); btn.textContent='Talebiniz Alındı ✓'; btn.classList.add('bg-secondary');">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface font-medium">E-Posta veya Telefon Numarası</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-on-surface-variant text-[20px]">mail</span>
+<input class="w-full h-12 pl-11 pr-4 rounded-full bg-surface-container-low font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container transition-colors" placeholder="ad@akademi.com veya 05XX..." type="text"/>
+</div>
+</div>
+<div class="flex items-center gap-space-xs mt-1">
+<input checked="" class="accent-primary w-4 h-4 cursor-pointer" id="smsOptIn" type="checkbox"/>
+<label class="font-body-sm text-[12px] text-on-surface-variant select-none cursor-pointer" for="smsOptIn">
+            SMS ile hızlı sepet tamamlama linki gönderilmesine izin veriyorum.
+          </label>
+</div>
+<button class="w-full h-12 mt-2 rounded-full bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider flex items-center justify-center gap-2 active:scale-[0.98] transition-transform shadow-md" type="submit">
+<span class="material-symbols-outlined text-[18px]">notifications</span>
+          Gelince Haber Ver
+        </button>
+</form>
+</div>
+</section>
+<!-- Interactive Sandbox Trigger Controls for Live Prototyping -->
+<section class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-sm shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">science</span>
+<span class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Test &amp; Teftiş Konsolu</span>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Prototip Modu</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+      Aşağıdaki düğmeleri kullanarak anlık modal simülasyonlarını tetikleyebilir ve kullanıcı akışını test edebilirsiniz.
+    </p>
+<div class="grid grid-cols-2 gap-space-sm pt-1">
+<button class="h-10 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm uppercase tracking-wide hover:bg-surface-container transition-colors flex items-center justify-center gap-1" onclick="triggerToast('Başarılı: Sepet güncellendi!')">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+        Toast Tetikle
+      </button>
+<button class="h-10 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm uppercase tracking-wide hover:bg-surface-container transition-colors flex items-center justify-center gap-1" onclick="alert('Simülasyon: 3D Secure modal katmanı açıldı.')">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+        Hata Testi
+      </button>
+</div>
+</section>
+</div>
+<script>
+  function triggerToast(msg) {
+    const banner = document.createElement('div');
+    banner.className = 'fixed top-20 left-4 right-4 z-50 bg-primary text-on-primary p-3 rounded-full shadow-lg flex items-center justify-between px-5 font-label-sm text-label-sm transition-all duration-300';
+    banner.innerHTML = '<span>' + msg + '</span><span class="material-symbols-outlined text-[16px]">done</span>';
+    document.body.appendChild(banner);
+    setTimeout(() => {
+      banner.style.opacity = '0';
+      setTimeout(() => banner.remove(), 300);
+    }, 2400);
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(96,67,46,0.05)]" data-active-classes="text-primary font-medium"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-1 min-w-[54px] h-12 text-on-surface-variant hover:text-primary transition-colors" data-path="ana-sayfa" href="#"><span class="material-symbols-outlined text-[20px]">home</span><span class="font-label-caps text-[10px] tracking-wider uppercase">Ana Sayfa</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[54px] h-12 text-on-surface-variant hover:text-primary transition-colors" data-path="magaza" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-label-caps text-[10px] tracking-wider uppercase">Mağaza</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[54px] h-12 text-on-surface-variant hover:text-primary transition-colors" data-path="egitmenler-icin" href="#"><span class="material-symbols-outlined text-[20px]">school</span><span class="font-label-caps text-[10px] tracking-wider uppercase">Eğitmen</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[54px] h-12 text-on-surface-variant hover:text-primary transition-colors" data-path="sepet" href="#"><span class="material-symbols-outlined text-[20px]">shopping_bag</span><span class="font-label-caps text-[10px] tracking-wider uppercase">Sepet</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[54px] h-12 text-on-surface-variant hover:text-primary transition-colors" data-path="iletisim" href="#"><span class="material-symbols-outlined text-[20px]">support_agent</span><span class="font-label-caps text-[10px] tracking-wider uppercase">İletişim</span></a></div></nav></body></html>
