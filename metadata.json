@@ -1,0 +1,9 @@
+{
+  "name": "NAILAB - Clinical Atelier & Academy Store",
+  "description": "Profesyonel tırnak eğitmenleri ve manikür akademileri için anatomik eğitim kitleri, hassas freze ekipmanları ve mağaza vitrini.",
+  "version": "1.0.0",
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ],
+  "permissions": []
+}
